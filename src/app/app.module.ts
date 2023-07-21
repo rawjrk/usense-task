@@ -1,17 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser'
-import { ReactiveFormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms'
 import { NgModule } from '@angular/core'
 
 import { AppComponent } from './app.component'
 import { PasswordFormComponent } from './components/password-form/password-form.component'
-// import { PasswordFormQuestionComponent } from './components/password-form/password-form-question.component'
+import { IndicatorFieldComponent } from './components/indicator-field/indicator-field.component'
+import { PasswordStrengthPipe } from './pipes/password-strength/password-strength.pipe'
 
 @NgModule({
-  imports: [BrowserModule, ReactiveFormsModule],
+  imports: [BrowserModule, FormsModule],
   declarations: [
     AppComponent,
     PasswordFormComponent,
-    // PasswordFormQuestionComponent,
+    IndicatorFieldComponent,
+    PasswordStrengthPipe,
   ],
   providers: [],
   bootstrap: [AppComponent],
