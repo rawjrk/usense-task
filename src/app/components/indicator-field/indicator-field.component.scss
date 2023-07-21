@@ -4,26 +4,26 @@ div {
   border-radius: 0.5rem;
   margin: 0.2rem;
 
-  background-color: #ce0000;
-  border: 1px #333 solid;
-}
+  border-width: 1px;
+  border-style: solid;
 
-.indicator-grey {
-  background-color: #e0e0e0;
-  border: 1px #bdbdbd solid;
-}
+  &.indicator-grey {
+    background-color: #e0e0e0;
+    border-color: #bdbdbd;
+  }
 
-.indicator-red {
-  background-color: #f44336;
-  border-color: #e53935;
-}
+  &.indicator-red {
+    background-color: #f44336;
+    border-color: #e53935;
+  }
 
-.indicator-yellow {
-  background-color: #ffc107;
-  border-color: #ffb300;
-}
+  &.indicator-yellow {
+    background-color: #ffc107;
+    border-color: #ffb300;
+  }
 
-.indicator-green {
-  background-color: #8bc34a;
-  border-color: #7cb342;
+  &.indicator-green {
+    background-color: #8bc34a;
+    border-color: #7cb342;
+  }
 }
